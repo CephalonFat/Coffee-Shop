@@ -5,11 +5,7 @@
     align-items: center;
     padding: 3 50px;
     z-index: 1000;
-
-    /* Colour of the navigation bar */
-    background-color: #f3ebe0;
-
-    /* Optional subtle bottom border */
+    background-color: #e2d7c6;
     border-bottom: 1px solid #ddd4c7;
 }
 
@@ -17,6 +13,17 @@
     font-family: 'new font';
     src: url(Nickainley-Normal.otf);
 }
+
+@font-face {
+    font-family: 'Bauer Bodoni';
+    src: url('Bauer Bodoni Regular.otf');
+}
+
+@font-face {
+    font-family: 'my font';
+    src: url('Bauer Bodoni Regular.otf');
+}
+
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -48,6 +55,7 @@
     src: url('Bauer Bodoni Regular.otf');
     -webkit-text-stroke: 2px rgba(175, 173, 173, 0.354);
 }
+
 .location {
     font-family: "Josefin Sans", sans-serif;
     font-size: 25px;
@@ -70,7 +78,6 @@ nav a {
     transition: 0.3s;
 }
 
-
 nav a:hover {
     background-color: #946d52;
     transform: translateY(-2px);
@@ -88,6 +95,121 @@ body.about-pic {
 body {
     margin: 0;
     background-color: #f8f5f1;
+}
+
+body.home-page {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(to right,
+            rgba(20, 13, 8, 0.86) 0%,
+            rgba(26, 17, 11, 0.72) 42%,
+            rgba(26, 17, 11, 0.32) 75%,
+            rgba(20, 13, 8, 0.2) 100%),
+        linear-gradient(to top,
+            rgba(18, 12, 7, 0.6) 0%,
+            transparent 45%),
+        url('ChatGPT Image Sep 23, 2026, 11_52_22 AM (1).png') center center / cover no-repeat fixed;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: calc(100vh - 120px);
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.hero-eyebrow {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: #d2c7b5;
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+.hero-title {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #faf7f2;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.01em;
+}
+
+.hero-title em {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.hero-description {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ded6c9;
+    max-width: 480px;
+    margin: 0 0 38px 0;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 36px;
+    border-radius: 9999px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.btn-menu {
+    background-color: #fbf8f2;
+    color: #271f16;
+    border: 1px solid #fbf8f2;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+}
+
+.btn-menu:hover {
+    background-color: #ffffff;
+    color: #1a130c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.32);
+}
+
+.btn-find {
+    background-color: rgba(58, 38, 23, 0.55);
+    color: #fbf8f2;
+    border: 1px solid rgba(235, 222, 208, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-find:hover {
+    background-color: rgba(90, 60, 36, 0.78);
+    border-color: rgba(255, 255, 255, 0.75);
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .about-section {
@@ -135,7 +257,7 @@ body {
     gap: 80px;
 }
 
-.about-details > div {
+.about-details>div {
     flex: 1;
 }
 
@@ -151,4 +273,497 @@ body {
     font-size: 18px;
     line-height: 1.4;
     margin: 0;
+}
+
+body.menu-page {
+    background-color: #f7f3ed;
+    color: #2b241e;
+    min-height: 100vh;
+}
+
+.menu-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 80px 50px 110px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+
+.menu-eyebrow {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: #8c8279;
+    margin: 0 0 16px 0;
+}
+
+.menu-title {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #2b231c;
+    margin: 0;
+}
+
+.menu-title em {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.menu-note {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.55;
+    color: #786f66;
+    max-width: 340px;
+    margin: 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.category-header h2 {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2b231c;
+    margin: 0;
+}
+
+.category-tag {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: #7b7268;
+    white-space: nowrap;
+}
+
+.category-divider {
+    height: 1px;
+    background-color: #dcd3c7;
+    margin: 14px 0 24px 0;
+}
+
+.secondary-section {
+    margin-top: 50px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.item-name {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2b231c;
+    white-space: nowrap;
+}
+
+.menu-item::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #cfc5b8;
+    margin: 0 14px;
+    order: 1;
+    position: relative;
+    top: 2px;
+}
+
+.item-price {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2b231c;
+    order: 2;
+    white-space: nowrap;
+    padding-left: 0;
+}
+
+.sub-item {
+    padding-left: 18px;
+    margin-bottom: 12px;
+}
+
+.sub-item .item-name {
+    font-size: 15.5px;
+    color: #594f46;
+}
+
+.sub-item .item-price {
+    font-size: 15.5px;
+    color: #594f46;
+}
+
+.item-detail {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    color: #857b71;
+    margin: -8px 0 18px 0;
+    line-height: 1.45;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
+    border-top: 1px solid #dcd3c7;
+    margin-top: 75px;
+    padding-top: 35px;
+}
+
+.footer-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #72685e;
+    margin: 0 0 10px 0;
+}
+
+.footer-detail {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3f362e;
+    margin: 0;
+    line-height: 1.45;
+}
+
+@media (max-width: 950px) {
+    .menu-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .menu-footer {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 45px;
+        font-size: 50px;
+    }
+}
+
+body.find-us-page {
+    background-color: #f7f3ed;
+    color: #2b241e;
+    min-height: 100vh;
+}
+
+.find-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 45px 100px;
+}
+
+.find-us-header {
+    margin-bottom: 45px;
+}
+
+.find-us-eyebrow {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: #8c8279;
+    margin: 0 0 16px 0;
+}
+
+.find-us-title {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #2b231c;
+    margin: 0;
+}
+
+.find-us-title em {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.find-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: stretch;
+}
+
+.info-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 48px;
+    box-shadow: 0 12px 40px rgba(40, 25, 15, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shop-name {
+    font-family: "Cormorant Garamond", "Bauer Bodoni", 'my font', serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #2b231c;
+    margin: 0 0 16px 0;
+}
+
+.shop-address {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #63584e;
+    margin: 0 0 20px 0;
+}
+
+.shop-phone {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #3b322a;
+    margin: 0;
+}
+
+.info-divider {
+    height: 1px;
+    background-color: #eee7dd;
+    margin: 28px 0;
+}
+
+.hours-section {
+    margin-bottom: 36px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+
+.hours-row .days {
+    color: #72685e;
+    font-weight: 300;
+}
+
+.hours-row .times {
+    color: #2b231c;
+    font-weight: 400;
+}
+
+.info-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-directions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b1d14;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 9999px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-directions:hover {
+    background-color: #4a3425;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(43, 29, 20, 0.25);
+}
+
+.btn-deliveroo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #2b1d14;
+    border: 1px solid #ded5c9;
+    padding: 15px 30px;
+    border-radius: 9999px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-deliveroo:hover {
+    background-color: #fbf8f4;
+    border-color: #c9bea7;
+    transform: translateY(-2px);
+}
+
+.map-card {
+    position: relative;
+    background: #000000;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(40, 25, 15, 0.05);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.map-info-bubble {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 16px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-width: 260px;
+    z-index: 2;
+}
+
+.bubble-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.bubble-header h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #201b17;
+    margin: 0;
+}
+
+.bubble-icon {
+    font-size: 15px;
+    color: #1a73e8;
+}
+
+.bubble-address {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #5f5750;
+    margin: 0 0 6px 0;
+}
+
+.bubble-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+}
+
+.rating-num {
+    font-weight: 600;
+    color: #d97706;
+}
+
+.rating-stars {
+    color: #f59e0b;
+    font-size: 11px;
+}
+
+.rating-count {
+    color: #8b8076;
+}
+
+.map-pin {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.pin-head {
+    width: 28px;
+    height: 28px;
+    background: #ea4335;
+    border: 3px solid #ffffff;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.pin-point {
+    width: 8px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+    .find-us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-card {
+        min-height: 380px;
+    }
 }
