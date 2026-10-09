@@ -3,12 +3,14 @@
     top: 0;
     display: flex;
     align-items: center;
-    padding: 15px 50px;
+    padding: 3 50px;
     z-index: 1000;
-}
 
-body {
-    background-color: #f8f5f1
+    /* Colour of the navigation bar */
+    background-color: #f3ebe0;
+
+    /* Optional subtle bottom border */
+    border-bottom: 1px solid #ddd4c7;
 }
 
 @font-face {
@@ -60,7 +62,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #292521;
     text-decoration: none;
     font-size: 25px;
     padding: 10px 20px;
@@ -70,6 +72,83 @@ nav a {
 
 
 nav a:hover {
-    background-color: #6f4e37;
+    background-color: #946d52;
     transform: translateY(-2px);
+}
+
+body.about-pic {
+    background-image: url('About.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f5f1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 80px 50px;
+    min-height: 80vh;
+}
+
+.about-image {
+    width: 525px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 600px;
+}
+
+.about-text h1 {
+    font-size: 55px;
+    font-family: 'my font', serif;
+    font-weight: normal;
+    line-height: 1.35;
+}
+
+.about-text p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-text hr {
+    border: none;
+    border-top: 2px solid #b5b2ae;
+    margin: 35px 0;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-details > div {
+    flex: 1;
+}
+
+.about-details h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+.about-details p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
 }
